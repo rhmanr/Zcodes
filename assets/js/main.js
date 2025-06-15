@@ -1,9 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Set current year in footer
-    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    const currentYearElement = document.getElementById('currentYear');
+    if (currentYearElement) {
+        currentYearElement.textContent = new Date().getFullYear();
+    }
     
     // Theme toggle functionality
     const themeToggle = document.getElementById('themeToggle');
+    const mobileThemeToggle = document.getElementById('mobileThemeToggle');
     const darkModeStyle = document.getElementById('darkModeStyle');
     const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
     
@@ -13,69 +17,109 @@ document.addEventListener('DOMContentLoaded', function() {
         enableDarkMode();
     }
     
-    // Toggle theme on button click
-    themeToggle.addEventListener('click', function() {
+    // Toggle theme on button click (desktop)
+    if (themeToggle) {
+        themeToggle.addEventListener('click', toggleTheme);
+    }
+    
+    // Toggle theme on button click (mobile)
+    if (mobileThemeToggle) {
+        mobileThemeToggle.addEventListener('click', toggleTheme);
+    }
+    
+    function toggleTheme() {
         if (document.body.classList.contains('dark-mode')) {
             disableDarkMode();
         } else {
             enableDarkMode();
         }
-    });
+    }
     
     function enableDarkMode() {
         document.body.classList.add('dark-mode');
-        darkModeStyle.removeAttribute('disabled');
+        if (darkModeStyle) {
+            darkModeStyle.removeAttribute('disabled');
+        }
         localStorage.setItem('theme', 'dark');
     }
     
     function disableDarkMode() {
         document.body.classList.remove('dark-mode');
-        darkModeStyle.setAttribute('disabled', 'true');
+        if (darkModeStyle) {
+            darkModeStyle.setAttribute('disabled', 'true');
+        }
         localStorage.setItem('theme', 'light');
     }
     
     // Header scroll effect
     const header = document.querySelector('header');
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    });
+    if (header) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    }
     
     // Mobile menu toggle
     const mobileMenuToggle = document.getElementById('mobileMenuToggle');
     const mobileNav = document.getElementById('mobileNav');
-    const mobileNavOverlay = document.querySelector('.mobile-nav-overlay');
-            
-    if (mobileMenuToggle) {
+    
+    if (mobileMenuToggle && mobileNav) {
         mobileMenuToggle.addEventListener('click', function() {
-        this.classList.toggle('active');
-        mobileNav.classList.toggle('show');
-        mobileNavOverlay.classList.toggle('active');
-        document.body.style.overflow = mobileNav.classList.contains('show') ? 'hidden' : '';
+            mobileMenuToggle.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            
+            // Prevent body scroll when menu is open
+            if (mobileNav.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // Close mobile menu when clicking on navigation links
+        const mobileNavLinks = mobileNav.querySelectorAll('a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenuToggle.classList.remove('active');
+                mobileNav.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!mobileMenuToggle.contains(e.target) && !mobileNav.contains(e.target)) {
+                if (mobileNav.classList.contains('active')) {
+                    mobileMenuToggle.classList.remove('active');
+                    mobileNav.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            }
         });
     }
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
             
-    // Close mobile menu when overlay is clicked
-    if (mobileNavOverlay) {
-        mobileNavOverlay.addEventListener('click', function() {
-        mobileMenuToggle.classList.remove('active');
-        mobileNav.classList.remove('show');
-        this.classList.remove('active');
-        document.body.style.overflow = '';
-        });
-    }
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
             
-    // Close mobile menu when navigation link is clicked
-    const mobileNavLinks = document.querySelectorAll('#mobileNav a');
-    mobileNavLinks.forEach(link => {
-        link.addEventListener('click', function() {
-        mobileMenuToggle.classList.remove('active');
-        mobileNav.classList.remove('show');
-        mobileNavOverlay.classList.remove('active');
-        document.body.style.overflow = '';
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                const headerHeight = document.querySelector('header').offsetHeight;
+                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
         });
     });
     
