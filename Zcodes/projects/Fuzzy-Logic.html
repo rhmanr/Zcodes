@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zcodes</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" id="darkModeStyle" disabled>
+    <link rel="icon" href="../assets/images/logo.png">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <a href="#" class="logo">
+            <img src="assets/images/logo.png" alt="Zcodes Logo">
+        </a>
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="themeToggle" aria-label="Toggle dark mode">
+                <span class="light-icon">☀️</span>
+                <span class="dark-icon">🌙</span>
+            </button>
+        </div>
+    </div>
+    </header>
+
+    <main class="project-detail">
+        <section class="project-header">
+            <div class="container">
+                <h1>Handwriting Recognition Aksara Sunda</h1>
+                <div class="project-meta">
+                    <span class="project-category">Fuzzy Logic, Expert System, Web Application Development</span>
+                    <span class="project-date">Completed: June 2025</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-content">
+            <div class="container">
+                <div class="project-overview">
+                    <div class="project-image-main">
+                        <img src="../assets/images/projects/Fuzzy_logic.png" alt="Handwriting Recognition Aksara Sunda">
+                    </div>
+                    <div class="project-highlights">
+                        <h2>Project Highlights</h2>
+                        <ul>
+                            <li>Developed a CNN-based model to recognize handwritten Sundanese script characters.</li>
+                            <li>Collected and labeled a custom dataset of handwritten Sundanese characters.</li>
+                            <li>Applied image preprocessing techniques to enhance model performance.</li>
+                            <li>Achieved 99.54% accuracy on the test dataset, demonstrating the model’s high reliability in recognizing handwritten Sundanese characters.</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="btn primary">View on GitHub</a>
+                            <a href="#" class="btn secondary">Try Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-details">
+                    <div class="project-description">
+                        <h2>About the Project</h2>
+                        <p>This project explores the use of deep learning, particularly Convolutional Neural Networks (CNN), to recognize handwritten characters from the Sundanese script.</p>
+                        <p>By applying Computer Vision techniques, the system can classify individual characters from image inputs, contributing to the development of Optical Character Recognition (OCR) systems for non-Latin scripts. 
+                            Beyond technical implementation, this project also supports the digital preservation and recognition of Indonesia’s traditional writing systems.</p>
+
+                        <h3>Technical Implementation</h3>
+                        <p>The system is built using Python with the following key technologies:</p>
+                        <ul>
+                            <li><strong>Convolutional Neural Networks (CNN):</strong> For classifying handwritten Sundanese characters.</li>
+                            <li><strong>TensorFlow:</strong> Used for the neural network components</li>
+                            <li><strong>OpenCV:</strong> For image preprocessing and augmentation</li>
+                            <li><strong>Scikit-learn:</strong> For model evaluation and metrics</li>
+                            <li><strong>Matplotlib/Seaborn:</strong> For visualizing training results and model performance</li>
+                            <li><strong>Jupyter Notebook:</strong> For interactive development and testing</li>
+                            <li><strong>Split Dataset:</strong> To evaluate model generalization and documentation</li>
+                            <li><strong>Streamlit:</strong> Provides the web interface for interacting with the system</li>
+                        </ul>
+                        
+                        <h3>Challenges & Solutions</h3>
+                        <p>One of the main challenges in this project was the lack of publicly available Sundanese handwriting datasets, 
+                            which are essential for training deep learning models. To overcome this, I created a custom dataset by collecting handwritten samples from my own writing, 
+                            ensuring sufficient variation in stroke styles and character forms. Another challenge was maintaining consistent data quality, 
+                            especially during the preprocessing of handwritten inputs that varied in thickness, noise, and alignment. This issue was addressed using image preprocessing techniques with OpenCV, 
+                            including grayscale conversion, resizing, and normalization. Finally, achieving high model accuracy required careful hyperparameter tuning and the application of data augmentation techniques to improve generalization and prevent overfitting.</p>
+                    </div>
+                    
+                    <div class="project-technologies">
+                        <h2>Technologies Used</h2>
+                        <div class="tech-grid">
+                            <div class="tech-item">
+                                <h4>Deep Learning</h4>
+                                <ul>
+                                    <li>Convolutional Neural Networks (CNN)</li>
+                                    <li>Augmentasi Citra (Image Augmentation)</li>
+                                </ul>
+                            </div>
+                            <div class="tech-item">
+                                <h4>Programming</h4>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>TensorFlow</li>
+                                    <li>Scikit-learn</li>
+                                    <li>NumPy & Pandas</li>
+                                    <li>OpenCV</li>
+                                    <li>Matplotlib & Seaborn</li>
+                                </ul>
+                            </div>
+                            <div class="tech-item">
+                                <h4>Deployment</h4>
+                                <ul>
+                                    <li>Streamlit</li>
+                                    <li>GitHub</li>
+                                    <li>Jupyter Notebook</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-gallery">
+            <div class="container">
+                <h2>Project Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="../assets/images/projects/Swaraksara-1.jpg" alt="Sample Images and Labels">
+                        <p>Sample Images and Corresponding Labels</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../assets/images/projects/Swaraksara-2.png" alt="Split Dataset Visualization">
+                        <p>Dataset Split Visualization</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../assets/images/projects/Swaraksara-3.png" alt="Test Data Prediction">
+                        <p>Test Data Prediction Results</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../assets/images/projects/Swaraksara-4.png" alt="Homepage">
+                        <p>UI Homepage</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../assets/images/projects/Swaraksara-4.png" alt="Image">
+                        <p>UI Image Upload</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../assets/images/projects/Swaraksara-5.png" alt="Prediction Result">
+                        <p>Prediction Result</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Zcodes. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
