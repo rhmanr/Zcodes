@@ -1,0 +1,45 @@
+/* Dark Mode Specific Overrides */
+body.dark-mode {
+    --background: #45121E;
+    --background-secondary: #732838;
+    --text: #FBF4F7;
+    --text-light: #F4D6E2;
+    
+    --primary-color: #E69DB8;
+    --primary-dark: #EDB4CA;
+    --primary-darker: #F4D6E2;
+    --primary-light: #D36188;
+    --primary-lighter: #BF4367;
+}
+
+body.dark-mode header {
+    background-color: rgba(69, 18, 30, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode header.scrolled {
+    background-color: rgba(69, 18, 30, 0.95);
+}
+
+body.dark-mode .project-card {
+    background-color: var(--background-secondary);
+}
+
+body.dark-mode .skill-category {
+    background-color: var(--background);
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+    background-color: var(--background-secondary);
+    color: var(--text);
+    border-color: var(--primary-darker);
+}
+
+body.dark-mode .light-icon {
+    display: none;
+}
+
+body.dark-mode .dark-icon {
+    display: inline;
+}
