@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
             id: 'Handwriting-Recognition-Presidential',
             title: 'Handwriting Recognition of 2024 Presidential Election Results',
             description: 'Computer vision application that identifies and classifies objects in real-time using deep learning models.',
-            image: 'assets/images/projects/Handwriting_Digit_Recognition.JPG',
+            image: 'assets/images/projects/Handwriting_Digit_Recognition.jpg',
             tags: ['Computer Vision', 'OpenCV', 'Deep Learning'],
             links: [
                 { url: 'projects/Handwriting-Recognition-Presidential.html', text: 'View Details' },
