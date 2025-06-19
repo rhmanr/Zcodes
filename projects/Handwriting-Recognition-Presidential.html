@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zcodes</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" id="darkModeStyle" disabled>
+    <link rel="icon" href="../assets/images/logo.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="../assets/images/logo.png" alt="Zcodes Logo">
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <div class="header-right">
+                <nav>
+                    <ul>
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <button id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="light-icon">☀️</span>
+                    <span class="dark-icon">🌙</span>
+                </button>
+            </div>
+
+            <!-- Mobile Controls -->
+            <div class="mobile-controls">
+                <button id="mobileThemeToggle" class="mobile-theme-toggle" aria-label="Toggle dark mode">
+                    <span class="light-icon">☀️</span>
+                    <span class="dark-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav" id="mobileNav">
+            <nav>
+                <ul>
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-detail">
+        <section class="project-header">
+            <div class="container">
+                <h1>Handwriting Recognition of 2024 Presidential Election Results</h1>
+                <div class="project-meta">
+                    <span class="project-category">Optical Character Recognition (OCR), Deep Learning, Computer Vision</span>
+                    <span class="project-date">Completed: June 2025</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-content">
+            <div class="container">
+                <div class="project-overview">
+                    <div class="project-image-main">
+                        <img src="../assets/images/projects/Handwriting_Digit_Recognition.png" alt="Handwriting Recognition Aksara Sunda">
+                    </div>
+                    <div class="project-highlights">
+                        <h2>Project Highlights</h2>
+                        <ul>
+                            <li>95%+ Accuracy achieved using HOG features with SVM classifier.</li>
+                            <li>Multi-Algorithm Comparison across 5 different machine learning models.</li>
+                            <li>Real-time Processing with efficient batch processing for large datasets.</li>
+                            <li>3 Feature Extraction Methods implemented and compared.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-details">
+                    <div class="project-description">
+                        <h2>About the Project</h2>
+                        <p>This project demonstrates a comprehensive approach to handwritten digit recognition, combining traditional machine learning techniques with modern software engineering practices. 
+                            The system provides an end-to-end solution from raw image processing to model evaluation, wrapped in an intuitive desktop application.</p>
+                        <p>The project is designed to recognize handwritten Sundanese characters, which are essential for preserving and promoting the Sundanese language and culture. 
+                            The system allows users to upload images of handwritten characters, which are then processed and classified using a trained machine learning model.</p>
+
+                        <h3>Technical Implementation</h3>
+                        <p>The system is built using Python with the following key technologies:</p>
+                        <ul>
+                            <li><strong>Machine Learning Classification:</strong> Multiple algorithms including SVM, Random Forest, and KNN for digit recognitions.</li>
+                            <li><strong>TensorFlow:</strong> Used for the neural network components</li>
+                            <li><strong>OpenCV:</strong> For image preprocessing and augmentation</li>
+                            <li><strong>Scikit-learn:</strong> For model evaluation and metrics</li>
+                            <li><strong>Matplotlib/Seaborn:</strong> For visualizing training results and model performance</li>
+                            <li><strong>Jupyter Notebook:</strong> For interactive development and testing</li>
+                            <li><strong>Split Dataset:</strong> To evaluate model generalization and documentation</li>
+                            <li><strong>Streamlit:</strong> Provides the web interface for interacting with the system</li>
+                        </ul>
+                        
+                        <h3>Challenges & Solutions</h3>
+                        <p>One of the main challenges in this project was handling inconsistent image formats and sizes from different sources, which could significantly impact model performance. 
+                            To overcome this, I implemented a robust dual-loading system using both OpenCV and PIL libraries, ensuring reliable image processing regardless of format corruption or compatibility issues. 
+                            The system automatically standardizes all images to 64×64 grayscale format with proper normalization.</p>
+                        <p>Another challenge was achieving high accuracy in character recognition. I experimented with various feature extraction techniques, including Histogram of Oriented Gradients (HOG) and Principal Component Analysis (PCA), to enhance model performance. The final model achieved over 95% accuracy using HOG features with a Support Vector Machine (SVM) classifier.</p>
+                        <p>Additionally, I implemented a batch processing system to handle large datasets efficiently, allowing for real-time processing of multiple images without significant performance degradation.</p>
+                    </div>
+                        
+                    
+                    <div class="project-technologies">
+                        <h2>Technologies Used</h2>
+                        <div class="tech-grid">
+                            <div class="tech-item">
+                                <h4>Machine Learning</h4>
+                                <ul>
+                                    <li>Support Vector Machine (SVM)</li>
+                                    <li>Random Forest (RF)</li>
+                                    <li>Decision Tree (DT)</li>
+                                    <li>K-Nearest Neighbors (KNN)</li>
+                                    <li>Logistic Regression (LR)</li>
+                                    <li>Feature Extraction (HOG & PCA)</li>
+                                </ul>
+                            </div>
+                            <div class="tech-item">
+                                <h4>Programming</h4>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>Scikit-learn</li>
+                                    <li>NumPy & OpenCV</li>
+                                    <li>PIL (Python Imaging Library)</li>
+                                    <li>Scikit-image</li>
+                                </ul>
+                            </div>
+                            <div class="tech-item">
+                                <h4>Deployment</h4>
+                                <ul>
+                                    <li>Streamlit</li>
+                                    <li>GitHub</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-gallery">
+            <div class="container">
+                <h2>Project Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="../assets/images/projects/Handwriting_Digit_Recognition-1.png" alt="Sample Images and Labels">
+                        <p>Sample Images and Corresponding Labels</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../assets/images/projects/Handwriting_Digit_Recognition-2.png" alt="Split Dataset Visualization">
+                        <p>Dataset Split Visualization</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../assets/images/projects/Handwriting_Digit_Recognition-3.png" alt="Test Data Prediction">
+                        <p>Test Data Prediction Results</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Zcodes. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

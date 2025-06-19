@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zcodes</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" id="darkModeStyle" disabled>
+    <link rel="icon" href="../assets/images/logo.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="../assets/images/logo.png" alt="Zcodes Logo">
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <div class="header-right">
+                <nav>
+                    <ul>
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <button id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="light-icon">☀️</span>
+                    <span class="dark-icon">🌙</span>
+                </button>
+            </div>
+
+            <!-- Mobile Controls -->
+            <div class="mobile-controls">
+                <button id="mobileThemeToggle" class="mobile-theme-toggle" aria-label="Toggle dark mode">
+                    <span class="light-icon">☀️</span>
+                    <span class="dark-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav" id="mobileNav">
+            <nav>
+                <ul>
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-detail">
+        <section class="project-header">
+            <div class="container">
+                <h1>Fuzzy-Based Anxiety Level Assessment System for New Migrant Students</h1>
+                <div class="project-meta">
+                    <span class="project-category">Fuzzy Logic, Expert System, Web Application Development</span>
+                    <span class="project-date">Completed: June 2025</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-content">
+            <div class="container">
+                <div class="project-overview">
+                    <div class="project-image-main">
+                        <img src="../assets/images/projects/Fuzzy_logic-1.png" alt="Handwriting Recognition Aksara Sunda">
+                    </div>
+                    <div class="project-highlights">
+                        <h2>Project Highlights</h2>
+                        <ul>
+                            <li>Developed a Fuzzy Tsukamoto system to assess anxiety based on questionnaire data.</li>
+                            <li>Converted linguistic responses (e.g., "Sometimes", "Often") into numeric scores.</li>
+                            <li>Designed custom membership functions and fuzzy inference rules.</li>
+                            <li>Built an interactive web app using Streamlit for real-time result visualization.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-details">
+                    <div class="project-description">
+                        <h2>About the Project</h2>
+                        <p>Fuzzy-Based Anxiety Level Assessment System for New Migrant Students is a fuzzy logic-based application designed to evaluate the anxiety levels of new migrant students. 
+                            It uses the Fuzzy Tsukamoto inference method, where each response from a psychological questionnaire is converted into numerical values, processed through membership functions, 
+                            and then inferred into one of three output levels: Low, Moderate, or High anxiety.</p>
+                        <p>With an interactive web interface built using Streamlit, the system is designed to be accessible, lightweight, and easy to use for students, counselors, 
+                            or institutions aiming to perform early screening of emotional and psychological conditions among students adapting to a new environment.</p>
+
+                        <h3>Technical Implementation</h3>
+                        <p>The system is built using Python and implements the Fuzzy Tsukamoto inference technique to process questionnaire responses. 
+                            Here's a breakdown of its main components:</p>
+                        <ul>
+                            <li><strong>Fuzzy Tsukamoto Logic:</strong> Calculates output anxiety levels based on fuzzy rules and numeric input derived from user responses</li>
+                            <li><strong>Membership Functions:</strong> Define the degree of membership for each input value in categories like Low, Medium, and High</li>
+                            <li><strong>Fuzzy Rules:</strong> A rule base is constructed to handle different combinations of user responses and map them to appropriate output levels</li>
+                            <li><strong>Python & NumPy:</strong> Handle numerical calculations and data preprocessing</li>
+                            <li><strong>Matplotlib:</strong> Used to visualize outputs such as charts and scores</li>
+                            <li><strong>Streamlit:</strong> Acts as the frontend web interface for user input and result display</li>
+                        </ul>
+                        
+                        <h3>Challenges & Solutions</h3>
+                        <p>A key challenge was converting linguistic responses (e.g., “Rarely”, “Sometimes”) into meaningful numeric 
+                            values for fuzzy logic processing. This was addressed by creating a custom scoring system and designing appropriate 
+                            membership functions. Another challenge was crafting accurate fuzzy rules to reflect real student experiences, which 
+                            required iterative testing and validation. Finally, integrating the fuzzy logic engine with the Streamlit interface required 
+                            optimization. This was resolved by modularizing the system to ensure smooth interaction and clear separation between logic and UI components.</p>
+                    </div>
+                    
+                    <div class="project-technologies">
+                        <h2>Technologies Used</h2>
+                        <div class="tech-grid">
+                            <div class="tech-item">
+                                <h4>Fuzzy Logic</h4>
+                                <ul>
+                                    <li>Fuzzy Tsukamoto Method</li>
+                                    <li>Membership Functions (Low, Medium, High)</li>
+                                    <li>Fuzzy Inference Rules</li>
+                                </ul>
+                            </div>
+                            <div class="tech-item">
+                                <h4>Programming</h4>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>Scikit-learn</li>
+                                    <li>NumPy & Pandas</li>
+                                </ul>
+                            </div>
+                            <div class="tech-item">
+                                <h4>Deployment</h4>
+                                <ul>
+                                    <li>Streamlit</li>
+                                    <li>GitHub</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-gallery">
+            <div class="container">
+                <h2>Project Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="../assets/images/projects/Fuzzy_logic-2.png" alt="Sample Images and Labels">
+                        <p>UI Homepage</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../assets/images/projects/Fuzzy_logic-3.png" alt="Split Dataset Visualization">
+                        <p>UI Form Data Diri</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../assets/images/projects/Fuzzy_logic-4.png" alt="Test Data Prediction">
+                        <p>UI Halaman Pertanyaan</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../assets/images/projects/Fuzzy_logic-5.png" alt="Homepage">
+                        <p>UI Hasil Tingkat Kecemasan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Zcodes. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
