@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
             id: 'data-science',
             title: 'Analysis of Travel Patterns and Operational Efficiency of Transjakarta Services Using Machine Learning',
             description: 'A comprehensive analysis of travel patterns and operational efficiency of Transjakarta services using machine learning techniques.',
-            image: 'assets/images/projects/Tj.jpg',
+            image: 'assets/images/projects/TJ.jpg',
             tags: ['Machine Learning', 'Data Analysis', 'Python'],
             links: [
                 { url: 'projects/TJ.html', text: 'View Details' },
