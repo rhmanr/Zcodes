@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
             image: 'assets/images/projects/Fuzzy_logic.png',
             tags: ['Fuzzy Logic', 'Control Systems', 'Python'],
             links: [
-                { url: 'projects/fuzzy-logic.html', text: 'View Details' },
+                { url: 'projects/Fuzzy-Logic.html', text: 'View Details' },
             ]
         },
         {
