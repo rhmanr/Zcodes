@@ -39,6 +39,16 @@ document.addEventListener('DOMContentLoaded', function() {
             links: [
                 { url: 'projects/TJ.html', text: 'View Details' },
             ]
+        },
+        {
+            id: 'website-rental-mobil',
+            title: 'Website Rental Mobil',
+            description: 'A web-based application for car rental services, providing features for booking, payment, and vehicle management.',
+            image: 'assets/images/projects/rental-mobil.png',
+            tags: ['Web Development', 'JavaScript', 'Rental Management System'],
+            links: [
+                { url: 'projects/Ian-transport.html', text: 'View Details' },
+            ]
         }
     ];
     
