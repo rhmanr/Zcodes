@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zcodes</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" id="darkModeStyle" disabled>
+    <link rel="icon" href="../assets/images/logo.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="../assets/images/logo.png" alt="Zcodes Logo">
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <div class="header-right">
+                <nav>
+                    <ul>
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <button id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="light-icon">☀️</span>
+                    <span class="dark-icon">🌙</span>
+                </button>
+            </div>
+
+            <!-- Mobile Controls -->
+            <div class="mobile-controls">
+                <button id="mobileThemeToggle" class="mobile-theme-toggle" aria-label="Toggle dark mode">
+                    <span class="light-icon">☀️</span>
+                    <span class="dark-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav" id="mobileNav">
+            <nav>
+                <ul>
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-detail">
+        <section class="project-header">
+            <div class="container">
+                <h1>Implementation of n8n Automation as Backend for an Interactive Chatbot</h1>
+                <div class="project-meta">
+                    <span class="project-category">Automation, n8n, Chatbot</span>
+                    <span class="project-date">Completed: October 2025</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-content">
+            <div class="container">
+                <div class="project-overview">
+                    <div class="project-image-main">
+                        <img src="../assets/images/projects/n8n.png" alt="n8n Automation for Chatbot">
+                    </div>
+                    <div class="project-highlights">
+                        <h2>Project Highlights</h2>
+                        <ul>
+                            <li>Automation-driven backend using n8n</li>
+                            <li>Integration of multiple services and APIs to support chatbot functionality.</li>
+                            <li>Intelligent chatbot responses powered by Generative AI</li>
+                            <li>Modular and scalable workflow design</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-details">
+                    <div class="project-description">
+                        <h2>About the Project</h2>
+                        <p>This project involves the development of an interactive Nutrition OPD chatbot application supported by an automation-driven backend using n8n. 
+                            The system is designed to assist users by providing automated, real-time responses through a conversational interface, while efficiently handling backend logic and service integrations</p>
+                        <p>The chatbot leverages workflow automation to manage conversation flows, API communication, database operations, and Generative AI (ChatGPT and Gemini) for intelligent response generation. 
+                            A lightweight web-based interface built with HTML and CSS is used to deliver a simple, responsive, and user-friendly user experience. The backend is integrated with Supabase for data 
+                            storage and retrieval, ensuring structured and reliable data management.</p>
+
+                        <h3>Technical Implementation</h3>
+                        <p>The system is built using n8n with the following key technologies:</p>
+                        <ul>
+                            <li><strong>n8n Workflow Automation:</strong> Core platform for defining and managing workflows.</li>
+                            <li><strong>API Integration:</strong> Seamless connection with external services and databases.</li>
+                            <li><strong>Chatbot Interface:</strong> User-friendly interface built using HTML and CSS for chatbot interactions.</li>
+                            <li><strong>Webhooks:</strong> Real-time event triggering and response handling, enabling the UI to communicate directly with n8n workflows via API calls.</li>
+                        </ul>
+                        
+                        <h3>Challenges & Solutions</h3>
+                        <p>One of the main challenges in this project was designing a flexible and maintainable chatbot logic using workflow automation. This was addressed by structuring n8n workflows into modular components, 
+                            allowing each conversational process to be managed and updated independently. Another challenge involved integrating Generative AI services while maintaining reliable system behavior and acceptable 
+                            response time. To overcome this, API-based communication was implemented with proper error handling, response validation, and optimized workflow execution to reduce unnecessary processing delays.</p>
+                        <p>Ensuring real-time interaction between the chatbot interface and the backend was also a challenge, particularly in minimizing latency between user input and system response. 
+                            This was resolved by leveraging webhooks to enable instant data exchange between the HTML/CSS-based UI and the n8n workflows. Additionally, system reliability and performance 
+                            were ensured through the use of test cases to validate workflow execution, monitor response behavior, and confirm that chatbot outputs matched predefined interaction scenarios.</p>
+                    </div>
+                        
+                    
+                    <div class="project-technologies">
+                        <h2>Technologies Used</h2>
+                        <div class="tech-grid">
+                            <div class="tech-item">
+                                <h4>Model/LLM</h4>
+                                <ul>
+                                    <li>ChatGPT</li>
+                                    <li>Gemini</li>
+                                </ul>
+                            </div>
+                            <div class="tech-item">
+                                <h4>Backend Automation</h4>
+                                <ul>
+                                    <li>n8n</li>
+                                    <li>Supabase</li>
+                                    <li>Webhooks</li>
+                                    <li>API Integration</li>
+                            </div>
+                            <div class="tech-item">
+                                <h4>Frontend</h4>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                </ul>
+                            </div>
+                            <div class="tech-item">
+                                <h4>Testing</h4>
+                                <ul>
+                                    <li>Test Cases</li>
+                                    <li>Validation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-gallery">
+            <div class="container">
+                <h2>Project Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="../assets/images/projects/n8n-1.png" alt="Sample Images and Labels">
+                        <p>UI Design</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../assets/images/projects/n8n-2.png" alt="Split Dataset Visualization">
+                        <p>Workflow Design</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../assets/images/projects/n8n-3.png" alt="Test Data Prediction">
+                        <p>Test Case</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Zcodes. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
