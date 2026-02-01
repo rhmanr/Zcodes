@@ -1,6 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
     const projects = [
         {
+            id: 'n8n',
+            title: 'Implementation of n8n Automation as Backend for an Interactive Chatbot',
+            description: 'A project that integrates n8n automation tools to serve as the backend for an interactive chatbot, enhancing workflow efficiency and user experience.',
+            image: 'assets/images/projects/n8n.png',
+            tags: ['Automation', 'n8n', 'Chatbot'],
+            links: [
+                { url: 'projects/n8n.html', text: 'View Details' },
+            ]
+        },
+        {
             id: 'Handwriting-Recognition-Swaraksara',
             title: 'Handwriting Recognition Aksara Sunda',
             description: 'A handwriting recognition system for the Sundanese script using Convolutional Neural Networks (CNN), built as part of a Computer Vision project focused on traditional character recognition.',
@@ -78,3 +88,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
