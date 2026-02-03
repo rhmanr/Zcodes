@@ -1,10 +1,15 @@
-/* Dark Mode Specific Overrides */
+/* ================================
+   DARK MODE OVERRIDES
+   ================================ */
+
 body.dark-mode {
+    /* Color Variables */
     --background: #45121E;
     --background-secondary: #732838;
+
     --text: #FBF4F7;
     --text-light: #F4D6E2;
-    
+
     --primary-color: #E69DB8;
     --primary-dark: #EDB4CA;
     --primary-darker: #F4D6E2;
@@ -12,34 +17,41 @@ body.dark-mode {
     --primary-lighter: #BF4367;
 }
 
+/* ================================
+   GLOBAL ELEMENTS
+   ================================ */
+
+body.dark-mode {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+/* Header */
 body.dark-mode header {
     background-color: rgba(69, 18, 30, 0.9);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.35);
 }
 
 body.dark-mode header.scrolled {
     background-color: rgba(69, 18, 30, 0.95);
 }
 
-body.dark-mode .project-card {
-    background-color: var(--background-secondary);
-}
-
-body.dark-mode .skill-category {
-    background-color: var(--background);
-}
-
-body.dark-mode .tech-card {
-    background-color: var(--background);
+/* Logo & Navigation */
+body.dark-mode nav ul li a {
     color: var(--text);
 }
 
-body.dark-mode .form-group input,
-body.dark-mode .form-group textarea {
-    background-color: var(--background-secondary);
-    color: var(--text);
-    border-color: var(--primary-darker);
+body.dark-mode nav ul li a:hover {
+    color: var(--primary-color);
 }
+
+body.dark-mode .hamburger-line {
+    background-color: var(--text);
+}
+
+/* ================================
+   ICON TOGGLE
+   ================================ */
 
 body.dark-mode .light-icon {
     display: none;
@@ -47,4 +59,126 @@ body.dark-mode .light-icon {
 
 body.dark-mode .dark-icon {
     display: inline;
+}
+
+/* ================================
+   MOBILE NAV
+   ================================ */
+
+body.dark-mode .mobile-nav {
+    background-color: var(--background);
+}
+
+body.dark-mode .mobile-nav ul li a {
+    color: var(--text);
+}
+
+/* ================================
+   HERO
+   ================================ */
+
+body.dark-mode .hero {
+    background-color: var(--background);
+}
+
+/* ================================
+   CARD-BASED COMPONENTS
+   ================================ */
+
+/* Project Cards */
+body.dark-mode .project-card {
+    background-color: var(--background-secondary);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+}
+
+/* Skill Cards */
+body.dark-mode .skill-category {
+    background-color: var(--background-secondary);
+}
+
+/* Tech Stack Cards (FIXED ISSUE) */
+body.dark-mode .tech-item {
+    background-color: var(--background-secondary);
+    color: var(--text);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+}
+
+body.dark-mode .tech-item h4 {
+    color: var(--primary-darker);
+    border-bottom: 2px solid var(--primary-lighter);
+}
+
+body.dark-mode .tech-item li {
+    color: var(--text-light);
+}
+
+body.dark-mode .tech-item li::before {
+    color: var(--primary-color);
+}
+
+/* ================================
+   PROJECT DETAIL
+   ================================ */
+
+body.dark-mode .project-header {
+    background-color: var(--primary-lighter);
+    color: var(--text);
+}
+
+body.dark-mode .project-header h1 {
+    color: var(--text);
+}
+
+body.dark-mode .project-meta span {
+    color: var(--text-light);
+}
+
+/* ================================
+   FORMS
+   ================================ */
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+    background-color: var(--background-secondary);
+    color: var(--text);
+    border-color: var(--primary-lighter);
+}
+
+body.dark-mode .form-group input::placeholder,
+body.dark-mode .form-group textarea::placeholder {
+    color: var(--text-light);
+}
+
+/* ================================
+   BUTTONS
+   ================================ */
+
+body.dark-mode .btn.primary {
+    color: var(--background);
+}
+
+body.dark-mode .btn.secondary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+body.dark-mode .btn.secondary:hover {
+    background-color: var(--primary-color);
+    color: var(--background);
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+
+body.dark-mode footer {
+    background-color: #2D0B14;
+}
+
+body.dark-mode .social-links a {
+    color: var(--primary-lighter);
+}
+
+body.dark-mode .social-links a:hover {
+    color: var(--primary-color);
 }
