@@ -26,7 +26,7 @@ body.dark-mode .project-card {
 }
 
 body.dark-mode .skill-category {
-    background-color: var(--background);
+    background-color: var(--background-secondary);
 }
 
 body.dark-mode .form-group input,
